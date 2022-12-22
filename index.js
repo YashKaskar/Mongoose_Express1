@@ -21,7 +21,7 @@ app.set('view engine', 'ejs');
 
 
 app.get('/dogs', (req, res) =>{
-    app.send('WOOF');
+    res.send('WOOF');
 })
 
 
