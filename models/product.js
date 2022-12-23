@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const productSchema = new mongoose.Schema({
     name: {
@@ -14,6 +14,7 @@ const productSchema = new mongoose.Schema({
 
     category: {
         type: String,
+        lowercase: true,
         enum: ['fruits', 'vegetable', 'diary']
     }
 });
