@@ -7,7 +7,7 @@ mongoose.set('strictQuery', true)
 
 
 
-mongoose.connect('mongodb://localhost:27017/shopApps')
+mongoose.connect('mongodb://localhost:27017/farmStands')
 .then(() =>{
     console.log(" Connection Open !!!!")
 })
