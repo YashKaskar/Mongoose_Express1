@@ -59,7 +59,6 @@ const seedProducts = [
 
 ] 
 
-
 Product.insertMany(seedProducts)
     .then(res => {
         console.log(res)
