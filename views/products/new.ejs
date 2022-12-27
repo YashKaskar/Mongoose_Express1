@@ -7,6 +7,15 @@
     <title> New Product</title>
 </head>
 <body>
-    
+    <h1> Add new product </h1>
+    <form action="/products" method="post"> 
+        <input type="text" name="name" placeholder="product name">
+        <input type="number" name="price" placeholder="product price">
+        <select name="grocery" id="">   
+            <option value="fruits">Fruits</option>
+            <option value="vegetables">Vegetables</option>
+            <option value="dairy">Dairy</option>
+        </select>
+    </form>
 </body>
 </html>
