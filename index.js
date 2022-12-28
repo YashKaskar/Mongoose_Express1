@@ -24,6 +24,8 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'))
 
+const categories = ['fruits', 'vegetable', 'dairy']
+
 app.get('/products/new', (req, res) => {    
 res.render('products/new')
 })
