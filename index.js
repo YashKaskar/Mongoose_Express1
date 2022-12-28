@@ -42,6 +42,12 @@ app.get('/products/:id', async(req, res) => {
     
 })
 
+app.get('/product/:id/edit', async (req, res) => {    
+    const { id } = req.params;
+    const product = await Product.findById(id)
+    res.render('products/edit', {product})
+})
+
 
 app.listen(8080, () => {
         console.log('APP IS LISTENING ON PORT 8080')
