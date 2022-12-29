@@ -61,6 +61,13 @@ app.put('/products/:id', async (req, res) => {
 })
 
 
+app.delete('/products/:id', async (req, res) => {   
+    const { id } = req.params;
+    const deleteproduct = await Product.findByIdAndDelete(id)
+    res.redirect('/products')
+})
+
+
 app.listen(8080, () => {
         console.log('APP IS LISTENING ON PORT 8080')
 })
