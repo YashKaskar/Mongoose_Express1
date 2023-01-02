@@ -4,6 +4,7 @@ const path = require('path');
 const methodOverride = require('method-override')
 
 
+// mongoose require
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', true)
 
